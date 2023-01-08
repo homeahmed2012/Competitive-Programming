@@ -1,11 +1,8 @@
-#Submission Id 25942781
 import sys
 
 def calc(x, y, z):
     if(y == 0):
-        return 1%z
-    if(y == 1):
-        return x%z
+        return 1
     res = calc(x, y//2, z)%z
     res = (res**2)%z
     if(y%2 != 0):
